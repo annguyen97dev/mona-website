@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Our Project</title>
+    <meta http-equiv="Cache-control" content="no-cache" />
+    <meta http-equiv="Expires" content="-1" />
+    <meta name="robots" content="noodp,noydir" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta property="og:site_name" content="" />
+    <meta name="description" content=" " />
+    <meta name="keywords" content="" />
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="" />
+    <meta property="og:description" content="" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" type="text/css" href="css/animation.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/fontawesome/css/all.css" />
+  </head>
+  <body class="project-body">
+    <div class="wrap-loading">
+      <span>m</span>
+      <span>o</span>
+      <span>n</span>
+      <span>a</span>
+      <div class="space"></div>
+      <span>m</span>
+      <span>e</span>
+      <span>d</span>
+      <span>i</span>
+      <span>a</span>
+    </div>
+
+    <div class="all-content">
+      <header class="header">
+        <div class="header-inner">
+          <div class="header-inner__logo">
+            <img src="images/logo-mona.png" alt="" />
+
+            <div class="logo-text">
+              <p class="text">Mona media</p>
+              <p class="sub">web & software</p>
+            </div>
+          </div>
+
+          <a class="header-inner__call">
+            <svg
+              class="bg-btn"
+              xmlns="http://www.w3.org/2000/svg"
+              width="70"
+              height="70"
+              viewBox="0 0 70 70"
+            >
+              <path
+                id="Polygon_2"
+                data-name="Polygon 2"
+                d="M44.378,0,60.622,9.378,70,25.622V44.378L60.622,60.622,44.378,70H25.622L9.378,60.622,0,44.378V25.622L9.378,9.378,25.622,0Z"
+                fill="#1274e4"
+              />
+            </svg>
+            <span class="box-icon">
+              <img src="images/icon-call.png" class="call-icon" alt="" />
+            </span>
+          </a>
+        </div>
+      </header>
+
+      <main class="project-page">
+        <div class="project-wrap">
+          <div class="project-detail">
+            <div class="col-title">
+              <h3 class="title">outsourcing website</h3>
+              <p class="text">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor invidunt.
+              </p>
+            </div>
+          </div>
+          <div class="project-slide" id="butter"></div>
+        </div>
+      </main>
+    </div>
+    <script type="text/javascript" src="js/jquery3.3.1.js"></script>
+
+    <script
+      type="text/javascript"
+      src="js/scrollmagic/ScrollMagic.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="js/scrollmagic/debug.addIndicators.min.js"
+    ></script>
+    <script type="text/javascript" src="js/slick-1.8.1/slick.min.js"></script>
+    <script type="text/javascript" src="js/gsap.min.js"></script>
+    <!-- <script type="text/javascript" src="js/scrollslider.js"></script> -->
+    <script type="text/javascript" src="js/butter.js"></script>
+
+    <scrip type="text/javascript" src="js/main.js"></scrip>
+    <script>
+      butter.init({
+        wrapperId: "butter",
+        wrapperDamper: 0.03,
+      });
+    </script>
+
+    <script>
+      let id = 0;
+      let scence = null;
+      let triggerElement = null;
+
+      $(".project-slide__video").each(function (index) {
+        id++;
+        console.log("ID: ", id);
+        $(this).attr("id", "project-" + id);
+      });
+
+      // init controller
+      var controller = new ScrollMagic.Controller();
+
+      // Effect Loading
+      let time = 0;
+      $(".wrap-loading span").each(function (index) {
+        time = time + 0.2;
+        $(this).addClass("change-color");
+        $(this).css("animation-delay", time + "s");
+
+        setTimeout(() => {
+          $(".wrap-loading").fadeOut("slow");
+        }, 2500);
+
+        setTimeout(() => {
+          $(".all-content").fadeIn("slow");
+          $(".project-page").addClass("show");
+
+          $(".project-detail .col-info").removeClass("active");
+          $(".project-detail .col-info").addClass("un-active");
+
+          $(".project-detail .col-info").eq(0).removeClass("un-active");
+          $(".project-detail .col-info").eq(0).addClass("active");
+        }, 3200);
+      });
+    </script>
+
+    <script>
+      let data_project = [];
+
+      $.getJSON("data/data-worldwide.json", function (data) {
+        data_project = [...data];
+        console.log("Data project: ", data_project);
+
+        $.each(data, function (index, value) {
+          $(".project-detail").append(
+            '<div class="col-info active"><div class="col-info__item"><p class="text-small">Client:</p><p class="text-big blue">' +
+              value.name +
+              '</p></div><div class="col-info__item"><p class="text-small">Developer:</p><p class="text-big">' +
+              value.developer +
+              '</p></div><div class="col-info__item"><p class="text-small">Date:</p><p class="text-big">' +
+              value.date +
+              '</p></div><div class="col-info__item"><p class="text-small">Designer:</p><p class="text-big">' +
+              value.designer +
+              '</p></div><div class="col-info__item"><p class="text-small">We do:</p><p class="text-big">' +
+              value.wedo +
+              "</p></div></div>"
+          );
+
+          $(".project-slide").append(
+            '<div class="project-slide__video project-1"> <img src="' +
+              value.media +
+              '" alt="" /> <a  href="' +
+              value.link +
+              '" class="btn-web" target="_blank">view website</a></div>'
+          );
+        });
+
+        // build scene
+
+        $(".project-slide__video").each(function (index) {
+          let project_id = $(this).attr("id");
+
+          console.log("Project ID: ", project_id);
+
+          scene = new ScrollMagic.Scene({
+            triggerElement: this,
+            triggerHook: "onCenter",
+            offset: 300,
+            duration: 200,
+          });
+
+          scene
+            .addTo(controller)
+
+            .on("enter", function (e) {
+              if (
+                !$(".project-detail .col-info").eq(index).hasClass("active")
+              ) {
+                $(".project-detail .col-info").removeClass("active");
+                $(".project-detail .col-info").addClass("un-active");
+
+                $(".project-detail .col-info")
+                  .eq(index)
+                  .removeClass("un-active");
+                $(".project-detail .col-info").eq(index).addClass("active");
+              }
+            });
+        });
+      });
+    </script>
+  </body>
+</html>

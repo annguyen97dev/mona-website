@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Japan Market</title>
+    <meta http-equiv="Cache-control" content="no-cache" />
+    <meta http-equiv="Expires" content="-1" />
+    <meta name="robots" content="noodp,noydir" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta property="og:site_name" content="" />
+    <meta name="description" content=" " />
+    <meta name="keywords" content="" />
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="" />
+    <meta property="og:description" content="" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" type="text/css" href="css/animation.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/fontawesome/css/all.css" />
+  </head>
+  <body class="japan-body">
+    <div class="wrap-loading">
+      <span>m</span>
+      <span>o</span>
+      <span>n</span>
+      <span>a</span>
+      <div class="space"></div>
+      <span>m</span>
+      <span>e</span>
+      <span>d</span>
+      <span>i</span>
+      <span>a</span>
+    </div>
+    <div class="all-content">
+      <header class="header">
+        <div class="header-inner">
+          <div class="header-inner__logo">
+            <img src="images/logo-mona.png" alt="" />
+
+            <div class="logo-text">
+              <p class="text">Mona media</p>
+              <p class="sub">web & software</p>
+            </div>
+          </div>
+
+          <a class="header-inner__call">
+            <svg
+              class="bg-btn"
+              xmlns="http://www.w3.org/2000/svg"
+              width="70"
+              height="70"
+              viewBox="0 0 70 70"
+            >
+              <path
+                id="Polygon_2"
+                data-name="Polygon 2"
+                d="M44.378,0,60.622,9.378,70,25.622V44.378L60.622,60.622,44.378,70H25.622L9.378,60.622,0,44.378V25.622L9.378,9.378,25.622,0Z"
+                fill="#1274e4"
+              />
+            </svg>
+            <span class="box-icon">
+              <img src="images/icon-call.png" class="call-icon" alt="" />
+            </span>
+          </a>
+        </div>
+      </header>
+
+      <main class="japan-page">
+        <div class="bg-japan"><img src="images/bg-japan.png" alt="" /></div>
+        <div class="japan-wrap">
+          <!-- JAPAN DETAIL -->
+          <div class="japan-detail">
+            <div class="container japan-detail-add">
+              <div class="row row-title">
+                <div class="col-md-6 col-12">
+                  <div class="box-title">
+                    <h3 class="title">for Japanese Market</h3>
+                  </div>
+                </div>
+                <div class="col-md-6 col-12">
+                  <div class="box-text">
+                    <p class="text">
+                      Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                      sed diam nonumy eirmod tempor invidunt.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- JAPAN PROEJECT -->
+          <div class="japan-project">
+            <a href="#" class="btn-web" target="_blank">view website</a>
+            <div class="japan-slider">
+              <div class="japan-slider__inner"></div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script type="text/javascript" src="js/jquery3.3.1.js"></script>
+    <script type="text/javascript" src="js/slick-1.8.1/slick.min.js"></script>
+
+    <scrip type="text/javascript" src="js/main.js"></scrip>
+
+    <script>
+      // Effect Loading
+      let time = 0;
+      $(".wrap-loading span").each(function (index) {
+        time = time + 0.2;
+        $(this).addClass("change-color");
+        $(this).css("animation-delay", time + "s");
+
+        setTimeout(() => {
+          $(".wrap-loading").fadeOut("slow");
+        }, 2500);
+
+        setTimeout(() => {
+          $(".all-content").fadeIn("slow");
+          $(".japan-page").addClass("show");
+          $(".japan-slider__inner").slick({
+            // autoplay: true,
+            // autoplaySpeed: 4000,
+            speed: 1500,
+            touchMove: false,
+            prevArrow:
+              '<button class="slick-prev" aria-label="Next" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="70" height="70"  viewBox="0 0 70 70"><path id="Polygon_3" data-name="Polygon 3" d="M44.378,0,60.622,9.378,70,25.622V44.378L60.622,60.622,44.378,70H25.622L9.378,60.622,0,44.378V25.622L9.378,9.378,25.622,0Z" fill="#16ccd3"/></svg><svg class="icon" xmlns="http://www.w3.org/2000/svg" width="35.417" height="9.332" viewBox="0 0 35.417 9.332"> <g id="Group_2632" data-name="Group 2632" transform="translate(0.707 0.354)"> <line id="Line_2" data-name="Line 2" x1="34" transform="translate(0.709 4)" fill="none" stroke="#fff" stroke-width="1"/> <path id="Path_2629" data-name="Path 2629" d="M4878.209,535.5l-4.312,4.312,4.313,4.313" transform="translate(-4873.897 -535.503)" fill="none" stroke="#fff" stroke-width="1"/> </g> </svg></button>',
+            nextArrow:
+              '<button class="slick-next" aria-label="Next" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="70" height="70"  viewBox="0 0 70 70"><path id="Polygon_3" data-name="Polygon 3" d="M44.378,0,60.622,9.378,70,25.622V44.378L60.622,60.622,44.378,70H25.622L9.378,60.622,0,44.378V25.622L9.378,9.378,25.622,0Z" fill="#16ccd3"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="35.417" height="9.332" class="icon" viewBox="0 0 35.417 9.332"><g id="Group_2630" data-name="Group 2630" transform="translate(-796.5 -535.334)"><line id="Line_2" data-name="Line 2" x2="34" transform="translate(796.5 539.688)" fill="none" stroke="#fff" stroke-width="1"/><path id="Path_2629" data-name="Path 2629" d="M4873.9,535.5l4.313,4.312-4.312,4.313" transform="translate(-4047 0.184)" fill="none" stroke="#fff" stroke-width="1"/></g></svg></button>',
+          });
+          $(".slick-next").addClass("active");
+
+          const checkSlideActive = () => {
+            let obj = {
+              link: null,
+              name: null,
+            };
+            $(".japan-slider__item").each(function (ind) {
+              if ($(this).hasClass("slick-active")) {
+                obj.link = $(this).attr("data-link");
+                obj.name = $(this).attr("data-name");
+              }
+            });
+            return obj;
+          };
+
+          const showBoxInfo = (name) => {
+            $(".box-info-japan").each(function (index) {
+              let name_box = $(this).attr("data-name");
+
+              console.log("Name box: ", name_box);
+              console.log("name: ", name);
+
+              if (name_box === name) {
+                $(".box-info-japan").fadeOut();
+                setTimeout(() => {
+                  $(this).fadeIn();
+                }, 300);
+              }
+            });
+          };
+
+          $(".japan-slider__inner").on(
+            "beforeChange",
+            function (event, slick, currentSlide, nextSlide) {
+              let obj = checkSlideActive();
+              $(".btn-web").attr("href", obj.link);
+            }
+          );
+
+          $(".japan-slider__inner").on(
+            "afterChange",
+            function (event, slick, currentSlide, nextSlide) {
+              let obj = checkSlideActive();
+              $(".btn-web").attr("href", obj.link);
+              // showBoxInfo(obj.name);
+            }
+          );
+
+          $(".slick-next").on("click", function () {
+            if (!$(this).hasClass("active")) {
+              $(this).addClass("active");
+              $(".slick-prev").removeClass("active");
+            }
+
+            let obj = checkSlideActive();
+            $(".btn-web").attr("href", obj.link);
+
+            showBoxInfo(obj.name);
+          });
+
+          $(".slick-prev").on("click", function () {
+            if (!$(this).hasClass("active")) {
+              $(this).addClass("active");
+              $(".slick-next").removeClass("active");
+            }
+
+            let obj = checkSlideActive();
+            $(".btn-web").attr("href", obj.link);
+            showBoxInfo(obj.name);
+          });
+        }, 3200);
+      });
+    </script>
+
+    <script>
+      $.getJSON("data/data-japan.json", function (data) {
+        console.log("Data project: ", data);
+
+        $.each(data, function (index, value) {
+          $(".japan-detail-add").append(
+            '<div class="box-info-japan" data-name="' +
+              value.name +
+              '"><div class="row row-info"><div class="col-md-6 col-6"><div class="col-info"><div class="col-info__item"><p class="text-small">Client:</p><p class="text-big blue">' +
+              value.name +
+              '</p></div><div class="col-info__item"><p class="text-small">Developer:</p><p class="text-big">' +
+              value.developer +
+              '</p></div><div class="col-info__item mb-0"><p class="text-small">We do:</p><p class="text-big">' +
+              value.wedo +
+              '</p></div></div></div><div class="col-md-6 col-12"><div class="col-info"><div class="col-info__item"><p class="text-small">Date:</p><p class="text-big">' +
+              value.date +
+              '</p></div><div class="col-info__item"><p class="text-small">Designer:</p><p class="text-big">' +
+              value.designer +
+              '</p></div></div></div></div><div class="row-review"><div class="box-review"><span>' +
+              value.point.total +
+              '</span></div><div class="box-rating"><div class="box-rating__item"><p>design</p><div class="rating-bar"><div class="rating-bar__color" style="width: ' +
+              value.point.design +
+              '%" ></div></div></div><div class="box-rating__item"><p>dev</p><div class="rating-bar"><div class="rating-bar__color" style="width: ' +
+              value.point.dev +
+              '%" ></div></div></div><div class="box-rating__item"><p>ux/ui</p><div class="rating-bar"><div class="rating-bar__color" style="width: ' +
+              value.point.uxui +
+              '%" ></div></div></div></div></div></div>'
+          );
+          $(".box-info-japan").eq(0).show();
+
+          $(".japan-slider__inner").append(
+            '<div class="japan-slider__item" data-link="' +
+              value.link +
+              '" data-name="' +
+              value.name +
+              '" > <img src="' +
+              value.media +
+              '" alt="" /></div>'
+          );
+        });
+      });
+    </script>
+  </body>
+</html>

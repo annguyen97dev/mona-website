@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="215" height="46" viewBox="0 0 215 46" style="">
+  <g id="Rectangle_1" data-name="Rectangle 1" fill="rgba(63,63,63,0)" stroke="#1274e4" stroke-width="2">
+    <path width="215" height="46" stroke="none" d="M0 0 L215 0 L215 46 L0 46 Z" class="WjjdtFWC_0"></path>
+    <path width="213" height="44" fill="none" d="M1 1 L214 1 L214 45 L1 45 Z" class="WjjdtFWC_1"></path>
+  </g>
+<style data-made-with="vivus-instant">.WjjdtFWC_0{stroke-dasharray:522 524;stroke-dashoffset:523;animation:WjjdtFWC_draw 2000ms linear 0ms forwards;}.WjjdtFWC_1{stroke-dasharray:514 516;stroke-dashoffset:515;animation:WjjdtFWC_draw 2000ms linear 1000ms forwards;}@keyframes WjjdtFWC_draw{100%{stroke-dashoffset:0;}}@keyframes WjjdtFWC_fade{0%{stroke-opacity:1;}94.44444444444444%{stroke-opacity:1;}100%{stroke-opacity:0;}}</style></svg>

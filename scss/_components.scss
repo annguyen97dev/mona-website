@@ -1,0 +1,266 @@
+/* --- START --- */
+@import url(fonts/Averta/font.css);
+
+:root {
+  --white: white;
+  --light_blue: #f2f7fb;
+  --blue: #0e67b2;
+  --yellow_btn: #d2b25f;
+  --fill_icon: #ebebeb;
+  --fill_input: #f8f8f8;
+  --border_input: #d3d3d3;
+  --active_text: #de9122;
+  --black: black;
+  --primary-font: "CocoSharpS";
+  --secondary-font: "Rufina";
+  --wrapper: 1920px;
+  --container: 1200px;
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+.wrapper {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container {
+  max-width: var(--container);
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container-big {
+  max-width: 1768px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container-fluid {
+  width: 100%;
+}
+.row {
+  display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox; /* TWEENER - IE 10 */
+  display: -webkit-flex; /* NEW - Chrome */
+  display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+/* --- BUTTON ---*/
+.btn {
+  border-radius: 4px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 2rem 3.5rem;
+  color: $white;
+  text-align: center;
+
+  &-white {
+    background: $white;
+    color: $normal-blue;
+    transition: 0.5s;
+    &:hover {
+      transition: 0.5s;
+    }
+  }
+
+  &-blue {
+    background: $blue;
+    transition: 0.5s;
+    &:hover {
+      background: #0e6eb9;
+      transition: 0.5s;
+    }
+  }
+
+  &-orange {
+    background: $orange;
+    transition: 0.5s;
+    &:hover {
+      background: #f56d27;
+      transition: 0.5s;
+    }
+  }
+
+  &-red {
+    background: #e21b1b;
+    transition: 0.5s;
+    padding: 12px 0;
+  }
+}
+
+/* --- SECTION --- */
+.section {
+  padding: 12rem 0;
+  @include max-media(600px) {
+    padding: 7rem 0;
+  }
+
+  &-title {
+    font-size: 4.5rem;
+    font-weight: bold;
+    color: $black;
+    text-align: center;
+    margin-bottom: 30px;
+    @include max-media(600px) {
+      font-size: 4rem;
+    }
+    @include max-media(500px) {
+      font-size: 3rem;
+    }
+    @include max-media(375px) {
+      font-size: 2.7rem;
+    }
+  }
+
+  &-title.white {
+    color: $white;
+  }
+
+  &-des {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: black;
+    text-align: center;
+    line-height: 2.4rem;
+  }
+
+  .row-title {
+    margin-bottom: 30px;
+  }
+}
+
+/* --- CARD --- */
+.wrap-card {
+  .card {
+    height: 100%;
+  }
+}
+
+/* --- CLASS DEFAULT */
+.justify-content-center {
+  justify-content: center;
+}
+.relative {
+  position: relative;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+a:focus {
+  outline: 0;
+  text-decoration: none;
+}
+.text {
+  &-center {
+    text-align: center !important;
+  }
+  &-left {
+    text-align: left !important;
+  }
+  &-right {
+    text-align: right !important;
+  }
+}
+.h-100 {
+  height: 100%;
+}
+.p-0 {
+  padding: 0;
+}
+.pt-0 {
+  padding-top: 0 !important;
+}
+.pb-0 {
+  padding-bottom: 0 !important;
+}
+
+.m-0 {
+  margin: 0 !important;
+}
+.mt-0 {
+  margin-top: 0 !important;
+}
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+.m-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+.btn {
+  text-decoration: none;
+  background: transparent;
+}
+.btn:focus {
+  outline: 0;
+}
+.block {
+  display: block;
+}
+.inline {
+  display: inline-block;
+  vertical-align: middle;
+}
+.vertical-content {
+  display: flex !important;
+  align-items: center;
+}
+ul {
+  padding-left: 0;
+}
+ul li {
+  list-style-type: none;
+}
+input,
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+input:focus,
+textarea:focus {
+  border-radius: 0;
+  outline: 0;
+}
+.slick-slide:focus {
+  outline: 0 !important;
+  border: none !important;
+}
+.slick-slide:active {
+  outline: 0 !important;
+  border: none !important;
+}
+.smooth-slick {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1s ease;
+  -webkit-transition: opacity 1s ease;
+}
+.smooth-slick.slick-initialized {
+  visibility: visible;
+  opacity: 1;
+}
+
+.w-100 {
+  width: 100%;
+}

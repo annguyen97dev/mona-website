@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="29.707" height="29.707" viewBox="0 0 29.707 29.707" style="">
+  <g id="Group_2633" data-name="Group 2633" transform="translate(-1823.146 -459.146)">
+    <path id="Line_3" data-name="Line 3" transform="translate(1823.5 459.5)" fill="none" stroke="#fff" stroke-width="1" d="M0,0L29,29" class="OVLdeZUl_0"></path>
+    <path id="Line_4" data-name="Line 4" transform="translate(1823.5 459.5)" fill="none" stroke="#fff" stroke-width="1" d="M29,0L0,29" class="OVLdeZUl_1"></path>
+  </g>
+<style data-made-with="vivus-instant">.OVLdeZUl_0{stroke-dasharray:42 44;stroke-dashoffset:43;animation:OVLdeZUl_draw 1000ms linear 0ms forwards;}.OVLdeZUl_1{stroke-dasharray:42 44;stroke-dashoffset:43;animation:OVLdeZUl_draw 1000ms linear 0ms forwards;}@keyframes OVLdeZUl_draw{100%{stroke-dashoffset:0;}}@keyframes OVLdeZUl_fade{0%{stroke-opacity:1;}92.3076923076923%{stroke-opacity:1;}100%{stroke-opacity:0;}}</style></svg>

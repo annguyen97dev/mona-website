@@ -1,0 +1,269 @@
+@font-face {
+  font-family: "CocoSharpS";
+  src: url("CocoSharpS-Heavy.woff2") format("woff2"),
+    url("CocoSharpS-Heavy.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CocoSharpS";
+  src: url("CocoSharpS-Italic.woff2") format("woff2"),
+    url("CocoSharpS-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CocoSharpS";
+  src: url("CocoSharpS-HeavyItalic.woff2") format("woff2"),
+    url("CocoSharpS-HeavyItalic.woff") format("woff");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CocoSharpS";
+  src: url("CocoSharpS-Regular.woff2") format("woff2"),
+    url("CocoSharpS-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CocoSharpS";
+  src: url("CocoSharpS-Light.woff2") format("woff2"),
+    url("CocoSharpS-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CocoSharpXL";
+  src: url("CocoSharpXL-Bold.woff2") format("woff2"),
+    url("CocoSharpXL-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CocoSharpS";
+  src: url("CocoSharpS-LightItalic.woff2") format("woff2"),
+    url("CocoSharpS-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CocoSharpXL";
+  src: url("CocoSharpXL-Extrabold.woff2") format("woff2"),
+    url("CocoSharpXL-Extrabold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CocoSharpXL";
+  src: url("CocoSharpXL-Extralight.woff2") format("woff2"),
+    url("CocoSharpXL-Extralight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CocoSharpXL";
+  src: url("CocoSharpXL-ExtralightItalic.woff2") format("woff2"),
+    url("CocoSharpXL-ExtralightItalic.woff") format("woff");
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CocoSharpXL";
+  src: url("CocoSharpXL-ExtraboldItalic.woff2") format("woff2"),
+    url("CocoSharpXL-ExtraboldItalic.woff") format("woff");
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CocoSharpXL";
+  src: url("CocoSharpXL-BoldItalic.woff2") format("woff2"),
+    url("CocoSharpXL-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CocoSharpXL";
+  src: url("CocoSharpXL-Heavy.woff2") format("woff2"),
+    url("CocoSharpXL-Heavy.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CocoSharpXL";
+  src: url("CocoSharpXL-Italic.woff2") format("woff2"),
+    url("CocoSharpXL-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CocoSharpXL";
+  src: url("CocoSharpXL-HeavyItalic.woff2") format("woff2"),
+    url("CocoSharpXL-HeavyItalic.woff") format("woff");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CocoSharpXL";
+  src: url("CocoSharpXL-Light.woff2") format("woff2"),
+    url("CocoSharpXL-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CocoSharpXL";
+  src: url("CocoSharpXL-Regular.woff2") format("woff2"),
+    url("CocoSharpXL-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CocoSharpXS";
+  src: url("CocoSharpXS-Bold.woff2") format("woff2"),
+    url("CocoSharpXS-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CocoSharpXS";
+  src: url("CocoSharpXS-BoldItalic.woff2") format("woff2"),
+    url("CocoSharpXS-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CocoSharpXL";
+  src: url("CocoSharpXL-LightItalic.woff2") format("woff2"),
+    url("CocoSharpXL-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CocoSharpXS";
+  src: url("CocoSharpXS-ExtraboldItalic.woff2") format("woff2"),
+    url("CocoSharpXS-ExtraboldItalic.woff") format("woff");
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CocoSharpXS";
+  src: url("CocoSharpXS-Extrabold.woff2") format("woff2"),
+    url("CocoSharpXS-Extrabold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CocoSharpXS";
+  src: url("CocoSharpXS-Extralight.woff2") format("woff2"),
+    url("CocoSharpXS-Extralight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CocoSharpXS";
+  src: url("CocoSharpXS-Heavy.woff2") format("woff2"),
+    url("CocoSharpXS-Heavy.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CocoSharpXS";
+  src: url("CocoSharpXS-ExtralightItalic.woff2") format("woff2"),
+    url("CocoSharpXS-ExtralightItalic.woff") format("woff");
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CocoSharpXS";
+  src: url("CocoSharpXS-Light.woff2") format("woff2"),
+    url("CocoSharpXS-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CocoSharpXS";
+  src: url("CocoSharpXS-HeavyItalic.woff2") format("woff2"),
+    url("CocoSharpXS-HeavyItalic.woff") format("woff");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CocoSharpXS";
+  src: url("CocoSharpXS-Italic.woff2") format("woff2"),
+    url("CocoSharpXS-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CocoSharpXS";
+  src: url("CocoSharpXS-LightItalic.woff2") format("woff2"),
+    url("CocoSharpXS-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CocoSharpXS";
+  src: url("CocoSharpXS-Regular.woff2") format("woff2"),
+    url("CocoSharpXS-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

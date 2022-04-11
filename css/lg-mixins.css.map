@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../js/lightGallery-master/src/sass/lg-mixins.scss"
+    ],
+    "names": [],
+    "file": "lg-mixins.css"
+}
